@@ -1,9 +1,13 @@
 [Source - Youtube [Frontend Advance]](https://www.youtube.com/watch?v=VYfKKzTOiqc)
 
 > https://ui.shadcn.com/docs/dark-mode/next
+
 > https://www.radix-ui.com/icons
+
 > https://swiperjs.com/react
+
 > https://www.npmjs.com/package/react-awesome-reveal
+
 > https://react-awesome-reveal.morello.dev/guides/getting-started
 ```
 npx shadcn-ui@latest init
