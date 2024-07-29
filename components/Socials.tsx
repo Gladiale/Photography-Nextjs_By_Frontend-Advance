@@ -1,0 +1,36 @@
+"use client";
+import Link from "next/link";
+import {
+  RiPaypalFill,
+  RiSnapchatFill,
+  RiSkypeFill,
+  RiFacebookFill,
+  RiInstagramFill,
+} from "react-icons/ri";
+
+type PropsType = {
+  containerStyles: string;
+  iconStyles: string;
+};
+
+const icons = [
+  { path: "/", name: <RiPaypalFill /> },
+  { path: "/", name: <RiSnapchatFill /> },
+  { path: "/", name: <RiSkypeFill /> },
+  { path: "/", name: <RiFacebookFill /> },
+  { path: "/", name: <RiInstagramFill /> },
+];
+
+const Socials = ({ containerStyles, iconStyles }: PropsType) => {
+  return (
+    <div className={`${containerStyles}`}>
+      {icons.map((icon, index) => (
+        <Link href={icon.path} key={index}>
+          <div className={`${iconStyles}`}>{icon.name}</div>
+        </Link>
+      ))}
+    </div>
+  );
+};
+
+export default Socials;
