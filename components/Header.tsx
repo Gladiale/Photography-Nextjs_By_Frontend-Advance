@@ -10,25 +10,23 @@ import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 
 const Header = () => {
-  const [header, setHeader] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
   const handleScroll = useCallback(() => {
-    setHeader(window.scrollY > 50);
+    setIsScrolled(window.scrollY > 50);
   }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     // Remove Events
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [handleScroll]);
 
   return (
     <header
       className={`${
-        header
-          ? "py-4 bg-white shadow-lg dark:bg-accent"
-          : "py-6 dark:bg-transparent"
+        isScrolled ? "py-4 bg-white shadow-lg dark:bg-accent" : "py-6 dark:bg-transparent"
       } sticky top-0 z-30 translation-all ${pathname === "/" && "bg-[#fff]"}`}
     >
       <div className="container mx-auto">
