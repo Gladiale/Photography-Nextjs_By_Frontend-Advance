@@ -12,7 +12,7 @@ const variants = {
   enter: { opacity: 1 },
 };
 
-const template = ({ children }: { children: React.ReactNode }) => {
+const Template = ({ children }: { children: React.ReactNode }) => {
   const completion = useScrollProgress();
 
   return (
@@ -34,4 +34,4 @@ const template = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default template;
+export default Template;
