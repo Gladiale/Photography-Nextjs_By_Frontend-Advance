@@ -26,13 +26,14 @@ const Hero = () => {
             </Fade>
 
             <Fade direction="up" delay={600} cascade damping={1e-1} triggerOnce={true}>
-              <h1 className="h1 uppercase">Let's make magic !</h1>
+              <h1 className="h1 uppercase">Let&apos;s make magic !</h1>
             </Fade>
 
             <Fade direction="up" delay={800} cascade damping={1e-1} triggerOnce={true}>
               <p className="subtitle max-w-[590px] mt-4 mx-auto xl:mx-0">
-                We are fine art, nature & portrait film photographers from San Francisco, with a
-                special love for natural light, medium format film cameras & redheads with freckles.
+                We are fine art, nature & portrait film photographers from San Francisco,
+                with a special love for natural light, medium format film cameras &
+                redheads with freckles.
               </p>
             </Fade>
 
@@ -80,7 +81,9 @@ const Hero = () => {
               <Fade direction="up" delay={800} cascade damping={1e-1} triggerOnce={true}>
                 {/* Badge 1 */}
                 <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                  <dt className="text-base leading-7 text-muted-foreground">Years Of Experience</dt>
+                  <dt className="text-base leading-7 text-muted-foreground">
+                    Years Of Experience
+                  </dt>
                   <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                     <Badge icon={<RiBook3Fill />} endCountNum={12} endCountText="+" />
                   </dd>

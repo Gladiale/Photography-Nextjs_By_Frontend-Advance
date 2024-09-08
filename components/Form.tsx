@@ -4,7 +4,13 @@ import { Fade } from "react-awesome-reveal";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { UserCheck, ArrowRightIcon, MessageSquare, UserRoundCheck, Building } from "lucide-react";
+import {
+  UserCheck,
+  ArrowRightIcon,
+  MessageSquare,
+  UserRoundCheck,
+  Building,
+} from "lucide-react";
 
 const Form = () => {
   return (
@@ -43,7 +49,7 @@ const Form = () => {
 
       <Fade direction="right" delay={1200} cascade damping={1e-1} triggerOnce={true}>
         <Button className="flex items-center gap-x-1 max-w-[165px]">
-          Let's Talk
+          Let&apos;s Talk
           <ArrowRightIcon size={20} />
         </Button>
       </Fade>

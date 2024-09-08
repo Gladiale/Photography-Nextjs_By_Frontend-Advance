@@ -60,28 +60,55 @@ const About = () => {
             {/* Content */}
             <div className="text-lg mt-12 xl:mt-3">
               <div className="text-center xl:text-left">
-                <Fade direction="right" delay={400} cascade damping={1e-1} triggerOnce={true}>
-                  <h3 className="h3 mb-4">Let's plan your perfect photoshoot</h3>
+                <Fade
+                  direction="right"
+                  delay={400}
+                  cascade
+                  damping={1e-1}
+                  triggerOnce={true}
+                >
+                  <h3 className="h3 mb-4">Let&apos;s plan your perfect photoshoot</h3>
                 </Fade>
-                <Fade direction="right" delay={600} cascade damping={1e-1} triggerOnce={true}>
+                <Fade
+                  direction="right"
+                  delay={600}
+                  cascade
+                  damping={1e-1}
+                  triggerOnce={true}
+                >
                   <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                    Our mission is to further develop the overall excellence of photography and to
-                    capture memories that will be cherished for a lifetime, in the timeless
-                    photographs.
+                    Our mission is to further develop the overall excellence of
+                    photography and to capture memories that will be cherished for a
+                    lifetime, in the timeless photographs.
                   </p>
                 </Fade>
-                <Fade direction="right" delay={800} cascade damping={1e-1} triggerOnce={true}>
+                <Fade
+                  direction="right"
+                  delay={800}
+                  cascade
+                  damping={1e-1}
+                  triggerOnce={true}
+                >
                   <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                    Profession photography services combine the classic knowledge of traditional
-                    photographic portraiture and contemporary style.
+                    Profession photography services combine the classic knowledge of
+                    traditional photographic portraiture and contemporary style.
                   </p>
                 </Fade>
 
                 {/* Icons */}
                 <div className="grid xl:grid-cols-2 gap-4 mb-12">
-                  <Fade direction="right" delay={1000} cascade damping={1e-1} triggerOnce={true}>
+                  <Fade
+                    direction="right"
+                    delay={1000}
+                    cascade
+                    damping={1e-1}
+                    triggerOnce={true}
+                  >
                     {infoData.map((item, index) => (
-                      <div className="flex items-center gap-x-4 mx-auto xl:mx-0" key={index}>
+                      <div
+                        className="flex items-center gap-x-4 mx-auto xl:mx-0"
+                        key={index}
+                      >
                         <div className="text-primary">{item.icon}</div>
                         <div>{item.text}</div>
                       </div>

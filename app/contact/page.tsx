@@ -16,14 +16,14 @@ const Contact = () => {
               </div>
             </Fade>
             <Fade direction="left" delay={600} cascade damping={1e-1} triggerOnce={true}>
-              <h1 className="h1 max-w-md mb-8">Let's work together.</h1>
+              <h1 className="h1 max-w-md mb-8">Let&apos;s work together.</h1>
             </Fade>
             <Fade direction="left" delay={800} cascade damping={1e-1} triggerOnce={true}>
               <p className="subtitle max-w-[400px]">
-                Thanks so much for considering us to photograph you, it really is such an honour.
-                Interested in learning more or just want to say hello? Kindly fill out the contact
-                form below and we will contact you as soon as possible! We can't wait to hear from
-                you and capture your beautiful story.
+                Thanks so much for considering us to photograph you, it really is such an
+                honour. Interested in learning more or just want to say hello? Kindly fill
+                out the contact form below and we will contact you as soon as possible! We
+                can't wait to hear from you and capture your beautiful story.
               </p>
             </Fade>
           </div>

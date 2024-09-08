@@ -33,8 +33,8 @@ const Pricing = () => {
           </Fade>
           <Fade direction="up" delay={800} cascade damping={1e-1} triggerOnce={true}>
             <p className="mt-6 text-lg leading-8">
-              Create the memories & celebrate the magic with Solene - a beautifully designed wedding
-              photography theme that has it all.
+              Create the memories & celebrate the magic with Solene - a beautifully
+              designed wedding photography theme that has it all.
             </p>
           </Fade>
         </div>
@@ -46,13 +46,13 @@ const Pricing = () => {
             <div className="p-8 sm:p-10 lg:flex-auto">
               <h3 className="text-2xl font-bold tracking-tight">Lifetime Membership</h3>
               <p className="mt-6 text-base leading-7">
-                Create the memories & celebrate the magic with Solene - a beautifully designed
-                wedding photography theme that has it all.
+                Create the memories & celebrate the magic with Solene - a beautifully
+                designed wedding photography theme that has it all.
               </p>
 
               <div className="mt-10 flex items-center gap-x-4">
                 <h4 className="flex-none text-sm font-semibold leading-6 text-primary">
-                  What's included
+                  What&apos;s included
                 </h4>
                 <div className="h-px flex-auto bg-gray-100"></div>
               </div>
@@ -63,7 +63,10 @@ const Pricing = () => {
               >
                 {includedFeatures.map((feature) => (
                   <li key={feature} className="flex text-muted-foreground gap-x-3">
-                    <CheckIcon className="h-6 w-5 flex-none text-primary" aria-hidden="true" />
+                    <CheckIcon
+                      className="h-6 w-5 flex-none text-primary"
+                      aria-hidden="true"
+                    />
                     {feature}
                   </li>
                 ))}
@@ -77,7 +80,9 @@ const Pricing = () => {
                   <p className="text-base font-semibold">Pay once, own it forever</p>
                   <p className="mt-6 flex items-baseline justify-center gap-x-2">
                     <span className="text-5xl font-bold tracking-tight">$349</span>
-                    <span className="text-sm font-semibold leading-6 tracking-wide">USD</span>
+                    <span className="text-sm font-semibold leading-6 tracking-wide">
+                      USD
+                    </span>
                   </p>
 
                   <Button

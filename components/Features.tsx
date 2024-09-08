@@ -52,9 +52,9 @@ const Features = () => {
             </Fade>
             <Fade direction="up" delay={800} cascade damping={1e-1} triggerOnce={true}>
               <p className="mt-6 text-lg leading-8 text-black dark:text-white">
-                It's wide array of extremely useful & user-friendly elements and features turn
-                website creation into a cakewalk. Get started now & see just how easy it is to make
-                the website you always wanted.
+                It&apos;s wide array of extremely useful & user-friendly elements and
+                features turn website creation into a cakewalk. Get started now & see just
+                how easy it is to make the website you always wanted.
               </p>
             </Fade>
           </div>
@@ -65,10 +65,16 @@ const Features = () => {
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
             <Fade direction="up" delay={1000} cascade damping={1e-1} triggerOnce={true}>
               {features.map((feature) => (
-                <div key={feature.name} className="relative hover:scale-110 transition-all">
+                <div
+                  key={feature.name}
+                  className="relative hover:scale-110 transition-all"
+                >
                   <dt className="text-base font-semibold leading-7 text-muted-foreground justify-center">
                     <div className="flex flex-col w-[100px] h-[100px] bg-primary rounded-full items-center mb-4 justify-center">
-                      <feature.icon className="h-[36px] w-[36px] text-white" aria-hidden="true" />
+                      <feature.icon
+                        className="h-[36px] w-[36px] text-white"
+                        aria-hidden="true"
+                      />
                     </div>
                     <div className="text-black dark:text-white">{feature.name}</div>
                   </dt>
